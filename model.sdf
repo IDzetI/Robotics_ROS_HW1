@@ -1,0 +1,451 @@
+﻿<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="my_robot">
+	<static>false</static>
+
+          <link name='base'>
+                    
+          <pose>0 0 .05 0 0 0</pose>
+            <collision name='collision'>
+              <geometry>
+                <cylinder>
+                  <radius>1</radius>
+                  <length>.1</length>
+                </cylinder>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+              <geometry>
+                <cylinder>
+                  <radius>1</radius>
+                  <length>.1</length>
+                </cylinder>
+              </geometry>
+            </visual>
+          </link>
+          
+          
+          <link name='firs_joint'>
+          <pose>0 0 .2 0 0 0</pose>
+            <collision name='collision'>
+              <geometry>
+                <cylinder>
+                  <radius>.3</radius>
+                  <length>.2</length>
+                </cylinder>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+              <geometry>
+                <cylinder>
+                  <radius>.3</radius>
+                  <length>.2</length>
+                </cylinder>
+              </geometry>
+            </visual>
+          </link>
+          
+          
+          
+           <link name='center_support_1_2'>
+              <pose>0 0 .55 0 0 0</pose>
+              <collision name='collision'>
+                <geometry>
+                  <box>
+                    <size>.3 .1 .5</size>
+                  </box>
+                </geometry>
+              </collision>
+
+              <visual name='visual'>
+                <geometry>
+                  <box>
+                    <size>.3 .1 .5</size>
+                  </box>
+                </geometry>
+              </visual>
+            </link>
+            
+               <link name='second_joint_support'>
+              <pose>0 0 .8 0 1.5707 1.5707</pose>
+                <collision name='collision'>
+                  <geometry>
+                    <cylinder>
+                      <radius>.15</radius>
+                      <length>.1</length>
+                    </cylinder>
+                  </geometry>
+                </collision>
+
+                <visual name='visual'>
+                  <geometry>
+                    <cylinder>
+                      <radius>.15</radius>
+                      <length>.1</length>
+                    </cylinder>
+                  </geometry>
+                </visual>
+              </link>
+            
+              <link name='second_joint'>
+                <pose>0 0.1 .8 0 1.5707 1.5707</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <cylinder>
+                        <radius>.1</radius>
+                        <length>.1</length>
+                      </cylinder>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <cylinder>
+                        <radius>.1</radius>
+                        <length>.1</length>
+                      </cylinder>
+                    </geometry>
+                  </visual>
+                </link>
+                
+              
+              <link name='center_support_2_3'>
+              <pose>0 .1 1.2 0 0 0</pose>
+              <collision name='collision'>
+                <geometry>
+                  <box>
+                    <size>.2 .1 .8</size>
+                  </box>
+                </geometry>
+              </collision>
+
+              <visual name='visual'>
+                <geometry>
+                  <box>
+                    <size>.2 .1 .8</size>
+                  </box>
+                </geometry>
+              </visual>
+            </link>
+            
+            <link name='third_joint_support'>
+                <pose>0 0.1 1.6 0 1.5707 1.5707</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <cylinder>
+                        <radius>.1</radius>
+                        <length>.1</length>
+                      </cylinder>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <cylinder>
+                        <radius>.1</radius>
+                        <length>.1</length>
+                      </cylinder>
+                    </geometry>
+                  </visual>
+                </link>
+            
+                <link name='third_joint'>
+                  <pose>0 0 1.6 0 1.5707 1.5707</pose>
+                    <collision name='collision'>
+                      <geometry>
+                        <cylinder>
+                          <radius>.08</radius>
+                          <length>.1</length>
+                        </cylinder>
+                      </geometry>
+                    </collision>
+
+                    <visual name='visual'>
+                      <geometry>
+                        <cylinder>
+                          <radius>.08</radius>
+                          <length>.1</length>
+                        </cylinder>
+                      </geometry>
+                    </visual>
+                </link>
+
+                <link name='center_support_3_4'>
+                  <pose>0 0 2 0 0 0</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <box>
+                        <size>.16 .1 .8</size>
+                      </box>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <box>
+                        <size>.16 .1 .8</size>
+                      </box>
+                    </geometry>
+                  </visual>
+                </link>
+                
+                <link name='fourth_joint_support'>
+                <pose>0 0 2.4 0 1.5707 1.5707</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <cylinder>
+                        <radius>.1</radius>
+                        <length>.1</length>
+                      </cylinder>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <cylinder>
+                        <radius>.08</radius>
+                        <length>.1</length>
+                      </cylinder>
+                    </geometry>
+                  </visual>
+                </link>
+            
+                <link name='fourth_joint'>
+                  <pose>0 .1 2.4 0 1.5707 1.5707</pose>
+                    <collision name='collision'>
+                      <geometry>
+                        <cylinder>
+                          <radius>.06</radius>
+                          <length>.1</length>
+                        </cylinder>
+                      </geometry>
+                    </collision>
+
+                    <visual name='visual'>
+                      <geometry>
+                        <cylinder>
+                          <radius>.06</radius>
+                          <length>.1</length>
+                        </cylinder>
+                      </geometry>
+                    </visual>
+                </link>
+                
+                <link name='fourth_joint2'>
+                  <pose>0 -.1 2.4 0 1.5707 1.5707</pose>
+                    <collision name='collision'>
+                      <geometry>
+                        <cylinder>
+                          <radius>.06</radius>
+                          <length>.1</length>
+                        </cylinder>
+                      </geometry>
+                    </collision>
+
+                    <visual name='visual'>
+                      <geometry>
+                        <cylinder>
+                          <radius>.06</radius>
+                          <length>.1</length>
+                        </cylinder>
+                      </geometry>
+                    </visual>
+                </link>
+                
+                 <link name='right_grab'>
+                  <pose>0 -.1 2.7 0 0 0</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <box>
+                        <size>.12 .1 .6</size>
+                      </box>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <box>
+                        <size>.12 .1 .6</size>
+                      </box>
+                    </geometry>
+                  </visual>
+                </link>
+                
+                <link name='left_grab'>
+                  <pose>0 .1 2.7 0 0 0</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <box>
+                        <size>.12 .1 .6</size>
+                      </box>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <box>
+                        <size>.12 .1 .6</size>
+                      </box>
+                    </geometry>
+                  </visual>
+                </link>
+                
+                <link name='grab'>
+                  <pose>0 0 2.95 0 0 0</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <box>
+                        <size>.12 .1 .1</size>
+                      </box>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <box>
+                        <size>.12 .1 .1</size>
+                      </box>
+                    </geometry>
+                  </visual>
+                </link>
+                
+                <link name='drill'>
+                  <pose>0 0 3.1 0 0 0</pose>
+                  <collision name='collision'>
+                    <geometry>
+                      <box>
+                        <size>.02 .02 .2</size>
+                      </box>
+                    </geometry>
+                  </collision>
+
+                  <visual name='visual'>
+                    <geometry>
+                      <box>
+                        <size>.02 .02 .2</size>
+                      </box>
+                    </geometry>
+                  </visual>
+                </link>
+                
+                <joint type="fixed" name="f1">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>center_support_1_2</child>
+                  <parent>firs_joint</parent>
+                </joint>
+                
+                
+                
+                <joint type="fixed" name="f2">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>second_joint_support</child>
+                  <parent>center_support_1_2</parent>
+                </joint>
+                
+                
+                <joint type="fixed" name="f3">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>center_support_2_3</child>
+                  <parent>second_joint</parent>
+                </joint>
+                
+                <joint type="fixed" name="f4">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>third_joint_support</child>
+                  <parent>center_support_2_3</parent>
+                </joint>
+                
+                <joint type="fixed" name="f5">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>center_support_3_4</child>
+                  <parent>third_joint</parent>
+                </joint>
+                
+                
+                <joint type="fixed" name="f6">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>fourth_joint_support</child>
+                  <parent>center_support_3_4</parent>
+                </joint>
+                
+                <joint type="fixed" name="f7">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>fourth_joint2</child>
+                  <parent>fourth_joint</parent>
+                </joint>
+                
+                <joint type="fixed" name="f8">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>right_grab</child>
+                  <parent>fourth_joint</parent>
+                </joint>
+                
+                <joint type="fixed" name="f9">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>left_grab</child>
+                  <parent>fourth_joint2</parent>
+                </joint>
+                
+                <joint type="fixed" name="f10">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>left_grab</child>
+                  <parent>grab</parent>
+                </joint>
+                
+                <joint type="fixed" name="f11">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>drill</child>
+                  <parent>grab</parent>
+                </joint>
+                
+                
+                
+                
+                
+                
+                
+                
+                <joint type="revolute" name="rotate_first_joint">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>firs_joint</child>
+                  <parent>base</parent>
+                  <axis>
+                    <xyz>0 0 1</xyz>
+                  </axis>
+                </joint>
+                
+                <joint type="revolute" name="rotate_second_joint">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>second_joint</child>
+                  <parent>second_joint_support</parent>
+                  <axis>
+                    <xyz>0 1 0</xyz>
+                  </axis>
+                </joint>
+                
+                <joint type="revolute" name="rotate_third_joint">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>third_joint</child>
+                  <parent>third_joint_support</parent>
+                  <axis>
+                    <xyz>0 1 0</xyz>
+                  </axis>
+                </joint>
+                
+                <joint type="revolute" name="fourth_second_joint">
+                  <pose>0 0 0 0 0 0</pose>
+                  <child>fourth_joint</child>
+                  <parent>fourth_joint_support</parent>
+                  <axis>
+                    <xyz>0 1 0</xyz>
+                  </axis>
+                </joint>
+                
+                
+                
+                
+                
+  </model>
+</sdf>

@@ -1,0 +1,5 @@
+﻿<launch>
+  <param name="robot_description"
+    command="$(find  ~/.gazebo/model/my_robot/model.sdf)usdf/madel.sdf" />
+
+</launch>
